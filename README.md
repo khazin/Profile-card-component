@@ -33,7 +33,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [https://github.com/khazin/Profile-card-component](https://github.com/khazin/Profile-card-component)
-- Live Site URL: [http://localhost/frontendmentor/profile-card-component/](http://localhost/frontendmentor/profile-card-component/)
+- Live Site URL: [https://khazin.github.io/Profile-card-component/](https://khazin.github.io/Profile-card-component/)
 
 ## My process
 
