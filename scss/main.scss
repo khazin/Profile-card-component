@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
 /************
 GLOBAL STYLES
 *************/
@@ -8,34 +9,41 @@ GLOBAL STYLES
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 62.5%; }
-
+  font-size: 62.5%;
+}
 :root {
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
-  --kumbh-sans: "Kumbh Sans", sans-serif; }
+
+  --kumbh-sans: "Kumbh Sans", sans-serif;
+}
 
 body {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--kumbh-sans); }
 
+  font-family: var(--kumbh-sans);
+}
 .container {
   height: 100vh;
   width: 100%;
-  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--dark-cyan);
   background-position: -50vw -20vh, 50vw 50vh;
+
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 /************
 MOBILE LAYOUT
@@ -45,10 +53,13 @@ MOBILE LAYOUT
   width: 32.5rem;
   min-height: 50vh;
   background-color: white;
+
   border-radius: 15px;
+
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 18.5rem auto 9rem; }
+  grid-template-rows: 18.5rem auto 9rem;
+}
 
 /*card header style*/
 .header {
@@ -57,75 +68,96 @@ MOBILE LAYOUT
   background: url(../images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-size: 101% 75.5%;
+
   border-top-left-radius: inherit;
-  border-top-right-radius: inherit; }
-  .header--image {
+  border-top-right-radius: inherit;
+
+  &--image {
     background-image: url(../images/image-victor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
     height: 10.5rem;
     width: 10.5rem;
     border-radius: 50%;
     border: 5px solid white;
+
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translate(-50%, -92%); }
+    transform: translate(-50%, -92%);
+  }
+}
 
 /*card body style*/
 .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .body--name {
+  align-items: center;
+
+  &--name {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--very-dark-desaturated-blue);
-    margin-top: 0.5rem; }
-  .body--age {
+    margin-top: 0.5rem;
+  }
+  &--age {
     color: var(--dark-grayish-blue);
     font-weight: initial;
     font-size: inherit;
-    margin-left: 0.5rem; }
-  .body--location {
+    margin-left: 0.5rem;
+  }
+  &--location {
     color: var(--dark-grayish-blue);
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-    margin-top: 1.4rem; }
+    margin-top: 1.4rem;
+  }
+}
 
 /*card footer style*/
 .footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   border-top: 1px solid var(--dark-gray);
   border-bottom-left-radius: inherit;
-  border-bottom-right-radius: inherit; }
-  .footer--stats {
+  border-bottom-right-radius: inherit;
+
+  &--stats {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 5rem; }
-  .footer--number {
+
+    width: 5rem;
+  }
+
+  &--number {
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--very-dark-desaturated-blue);
-    margin-bottom: 0.8rem; }
-  .footer--title {
+    margin-bottom: 0.8rem;
+  }
+  &--title {
     font-size: 1rem;
     font-weight: 400;
     color: var(--dark-gray);
-    letter-spacing: 0.18rem; }
+    letter-spacing: 0.18rem;
+  }
+}
 
 /************************
 TABLET AND DESKTOP LAYOUT
 *************************/
 @media screen and (min-width: 768px) {
-  /*card layout style*/
+/*card layout style*/
   .card {
-    width: 34.5rem; } }
+    width: 34.5rem;
+  }
+}
 
 /****************
 ATTRIBUTION STYLE
@@ -138,7 +170,9 @@ ATTRIBUTION STYLE
   margin-top: 2rem;
   font-size: 1.5rem;
   color: white;
-  text-align: center; }
-  .attribution a {
+  text-align: center;
+  & a {
     font-size: 1.5rem;
-    color: white; }
+    color: white;
+  }
+}
