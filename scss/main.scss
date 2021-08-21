@@ -10,7 +10,7 @@ GLOBAL STYLES
   padding: 0;
   margin: 0;
   font-size: 62.5%;
-  overflow: hidden;
+  // overflow: hidden;
 }
 :root {
   --dark-cyan: hsl(185, 75%, 39%);
@@ -52,6 +52,7 @@ MOBILE LAYOUT
       url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: -25rem -50rem, 69rem 29rem;
+
   }
 }
 
@@ -186,8 +187,11 @@ ATTRIBUTION STYLE
   font-size: 1.5rem;
   color: white;
   text-align: center;
+  z-index: 1;
+
   & a {
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
   }
 }
